@@ -1,7 +1,7 @@
-package StrategyPattern.ducks;
+package StrategyPattern.duck.ducks;
 
-import StrategyPattern.fly.FlyBehaviour;
-import StrategyPattern.quack.QuackBehaviour;
+import StrategyPattern.duck.fly.FlyBehaviour;
+import StrategyPattern.duck.quack.QuackBehaviour;
 
 /**
  * Created by davicres on 05/04/2016.
@@ -12,7 +12,7 @@ public abstract class Duck {
 
     public abstract void display();
     public void swim() {
-        System.out.println("all StrategyPattern.ducks swim");
+        System.out.println("all StrategyPattern.duck.ducks swim");
     }
 
     public void fly() {

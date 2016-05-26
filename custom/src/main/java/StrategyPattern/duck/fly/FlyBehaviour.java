@@ -1,4 +1,4 @@
-package StrategyPattern.fly;
+package StrategyPattern.duck.fly;
 
 /**
  * Created by davicres on 05/04/2016.

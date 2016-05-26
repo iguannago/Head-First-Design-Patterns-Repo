@@ -1,4 +1,4 @@
-package StrategyPattern.quack;
+package StrategyPattern.duck.quack;
 
 /**
  * Created by davicres on 26/05/2016.

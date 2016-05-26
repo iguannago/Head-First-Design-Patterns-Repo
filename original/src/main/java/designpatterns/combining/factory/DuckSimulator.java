@@ -23,7 +23,7 @@ public class DuckSimulator {
 		simulate(rubberDuck);
 		simulate(gooseDuck);
  
-		System.out.println("The StrategyPattern.ducks quacked " +
+		System.out.println("The StrategyPattern.duck.ducks quacked " +
 		                   QuackCounter.getQuacks() + 
 		                   " times");
 	}

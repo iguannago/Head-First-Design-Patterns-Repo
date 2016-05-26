@@ -43,7 +43,7 @@ public class DuckSimulator {
 
 		simulate(flockOfDucks);
 
-		System.out.println("\nThe StrategyPattern.ducks quacked " +
+		System.out.println("\nThe StrategyPattern.duck.ducks quacked " +
 		                   QuackCounter.getQuacks() + 
 		                   " times");
 	}
