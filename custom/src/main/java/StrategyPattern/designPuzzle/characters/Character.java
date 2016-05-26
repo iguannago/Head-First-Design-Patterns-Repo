@@ -12,4 +12,8 @@ public abstract class Character {
     public void setWeaponBehaviour(WeaponBehaviour weaponBehaviour) {
         this.weaponBehaviour = weaponBehaviour;
     }
+
+    public WeaponBehaviour getWeaponBehaviour() {
+        return weaponBehaviour;
+    }
 }
