@@ -1,6 +1,6 @@
 # Head First Design Patterns (2014 update)
 
-I have recently updated all the code for Head First Design Patterns to be compatible
+* I have recently updated all the code for Head First Design Patterns to be compatible
 with Java 8. This new code accompanies an update for the book, released in July, 2014.
 
 Download the code and compile and run from the command line, or load the code into 
