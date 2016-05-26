@@ -1,5 +1,6 @@
 package StrategyPattern.designPuzzle.characters;
 
+import StrategyPattern.designPuzzle.weapons.BowAndArrow;
 import org.junit.Test;
 
 import static org.junit.Assert.assertNotNull;
@@ -22,11 +23,15 @@ public class DesignPuzzleTest {
     public void queenTest() {
         Character queen = new Queen();
         queen.fight();
+        queen.setWeaponBehaviour(new BowAndArrow());
+        queen.fight();
     }
 
     @Test
     public void kingTest() {
         Character king = new King();
+        king.fight();
+        king.setWeaponBehaviour(new BowAndArrow());
         king.fight();
     }
 }
