@@ -1,4 +1,4 @@
-package ducks;
+package StrategyPattern.ducks;
 
 import org.junit.Test;
 

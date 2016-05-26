@@ -1,7 +1,7 @@
-package ducks;
+package StrategyPattern.ducks;
 
-import fly.FlyWithWings;
-import quack.Quack;
+import StrategyPattern.fly.FlyWithWings;
+import StrategyPattern.quack.Quack;
 
 /**
  * Created by davicres on 05/04/2016.

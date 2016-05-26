@@ -1,6 +1,6 @@
-package ducks;
+package StrategyPattern.ducks;
 
-import fly.FlyRocketPowered;
+import StrategyPattern.fly.FlyRocketPowered;
 
 /**
  * Created by davicres on 05/04/2016.
