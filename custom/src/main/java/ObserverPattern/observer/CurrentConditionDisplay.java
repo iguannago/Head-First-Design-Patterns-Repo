@@ -18,10 +18,8 @@ public class CurrentConditionDisplay implements Observer, DisplayElement {
     }
 
     public void display() {
-        System.out.printf("CurrentConditionDisplay{" +
-                "temp=" + temp +
-                ", humidity=" + humidity +
-                '}');
+        System.out.println("Current conditions: " + temp
+                + "F degrees and " + humidity + "% humidity");
     }
 
     public void update(float temp, float humidity, float pressure) {
