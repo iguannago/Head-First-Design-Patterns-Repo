@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Head First Design Patterns (2014 update)
 
 * I have recently updated all the code for Head First Design Patterns to be compatible
@@ -11,8 +11,3 @@ https://wiki.eclipse.org/JDT/Eclipse_Java_8_Support_For_Kepler
 
 
 Other links for the book are available on the book page at <a href="http://wickedlysmart.com/head-first-design-patterns/">wickedlysmart.com</a>.
-
-=======
-# Head-First-Design-Patterns-Repo
-Head-First-Design-Patterns-Repo
->>>>>>> 9b542d11a3ddeb4351cc0476a9236b98329812ef
