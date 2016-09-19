@@ -19,6 +19,7 @@ public class StatisticsDisplay implements Observer, DisplayElement {
     }
 
     public void display() {
+        System.out.print("Statistics: ");
         System.out.println("Avg/Max/Min temperature = " + (tempSum / numReadings)
                 + "/" + maxTemp + "/" + minTemp);
     }
