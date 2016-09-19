@@ -36,4 +36,12 @@ public class ObserverPatternTest {
         weatherData.notifyObservers();
     }
 
+    @Test
+    public void removeObserverTest() {
+        observer = new CurrentConditionDisplay(weatherData);
+        weatherData.notifyObservers();
+        weatherData.removeObserver(observer);
+        weatherData.notifyObservers();
+    }
+
 }
