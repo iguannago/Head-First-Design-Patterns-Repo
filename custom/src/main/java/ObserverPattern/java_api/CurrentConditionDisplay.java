@@ -8,6 +8,14 @@ import java.util.Observer;
  */
 public class CurrentConditionDisplay implements Observer {
     public void update(Observable o, Object arg) {
-
+        System.out.println(this);
+        System.out.println("subject: " + o);
+        System.out.println("arg: " + arg);
     }
+
+    @Override
+    public String toString() {
+        return "CurrentConditionDisplay{}";
+    }
+
 }
