@@ -10,35 +10,34 @@ import org.junit.Test;
 public class ObserverPatternTest {
 
     private final WeatherData weatherData = new WeatherData();
-    private Observer observer;
 
     @Test
     public void currentConditionDisplayTest() {
-        observer = new CurrentConditionDisplay(weatherData);
+        new CurrentConditionDisplay(weatherData);
         weatherData.notifyObservers();
     }
 
     @Test
     public void forecastDisplayTest() {
-        observer = new ForecastDisplay(weatherData);
+        new ForecastDisplay(weatherData);
         weatherData.notifyObservers();
     }
 
     @Test
     public void heatIndexDisplayTest() {
-        observer = new HeatIndexDisplay(weatherData);
+        new HeatIndexDisplay(weatherData);
         weatherData.notifyObservers();
     }
 
     @Test
     public void statisticsDisplayTest() {
-        observer = new StatisticsDisplay(weatherData);
+        new StatisticsDisplay(weatherData);
         weatherData.notifyObservers();
     }
 
     @Test
     public void removeObserverTest() {
-        observer = new CurrentConditionDisplay(weatherData);
+        CurrentConditionDisplay observer = new CurrentConditionDisplay(weatherData);
         weatherData.notifyObservers();
         weatherData.removeObserver(observer);
         weatherData.notifyObservers();

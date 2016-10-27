@@ -7,11 +7,9 @@ import ObserverPattern.subject.WeatherData;
  * Created by davicres on 24/07/2016.
  */
 public class HeatIndexDisplay implements Observer, DisplayElement {
-    private final WeatherData weatherData;
     private float heatIndex = 0.0f;
 
     public HeatIndexDisplay(WeatherData weatherData) {
-        this.weatherData = weatherData;
         weatherData.registerObserver(this);
     }
 

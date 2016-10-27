@@ -11,10 +11,8 @@ public class StatisticsDisplay implements Observer, DisplayElement {
     private float maxTemp = 0.0f;
     private float tempSum = 0.0f;
     private int numReadings;
-    private final WeatherData weatherData;
 
     public StatisticsDisplay(WeatherData weatherData) {
-        this.weatherData = weatherData;
         weatherData.registerObserver(this);
     }
 

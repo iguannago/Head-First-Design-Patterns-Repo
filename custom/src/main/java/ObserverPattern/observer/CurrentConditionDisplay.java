@@ -7,13 +7,11 @@ import ObserverPattern.subject.WeatherData;
  * Created by davicres on 24/07/2016.
  */
 public class CurrentConditionDisplay implements Observer, DisplayElement {
-    private final WeatherData weatherData;
     private float temp;
     private float humidity;
 
 
     public CurrentConditionDisplay(WeatherData weatherData) {
-        this.weatherData = weatherData;
         weatherData.registerObserver(this);
     }
 
