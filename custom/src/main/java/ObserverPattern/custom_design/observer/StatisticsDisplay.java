@@ -1,7 +1,7 @@
-package ObserverPattern.observer;
+package ObserverPattern.custom_design.observer;
 
-import ObserverPattern.DisplayElement;
-import ObserverPattern.subject.WeatherData;
+import ObserverPattern.custom_design.DisplayElement;
+import ObserverPattern.custom_design.subject.WeatherData;
 
 /**
  * Created by davicres on 24/07/2016.

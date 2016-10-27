@@ -1,7 +1,7 @@
-package ObserverPattern;
+package ObserverPattern.custom_design;
 
-import ObserverPattern.observer.*;
-import ObserverPattern.subject.WeatherData;
+import ObserverPattern.custom_design.observer.*;
+import ObserverPattern.custom_design.subject.WeatherData;
 import org.junit.Test;
 
 /**

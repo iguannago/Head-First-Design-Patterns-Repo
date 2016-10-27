@@ -1,10 +1,10 @@
-package ObserverPattern;
+package ObserverPattern.custom_design;
 
-import ObserverPattern.observer.CurrentConditionDisplay;
-import ObserverPattern.observer.ForecastDisplay;
-import ObserverPattern.observer.HeatIndexDisplay;
-import ObserverPattern.observer.StatisticsDisplay;
-import ObserverPattern.subject.WeatherData;
+import ObserverPattern.custom_design.observer.CurrentConditionDisplay;
+import ObserverPattern.custom_design.observer.ForecastDisplay;
+import ObserverPattern.custom_design.observer.HeatIndexDisplay;
+import ObserverPattern.custom_design.observer.StatisticsDisplay;
+import ObserverPattern.custom_design.subject.WeatherData;
 
 /**
  * Created by davicres on 24/07/2016.

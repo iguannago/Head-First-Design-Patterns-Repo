@@ -1,6 +1,6 @@
-package ObserverPattern.subject;
+package ObserverPattern.custom_design.subject;
 
-import ObserverPattern.observer.Observer;
+import ObserverPattern.custom_design.observer.Observer;
 
 /**
  * Created by davicres on 24/07/2016.
