@@ -8,7 +8,12 @@ public class WeatherStation {
         WeatherData weatherData = new WeatherData();
         weatherData.addObserver(new CurrentConditionDisplay());
         System.out.println("count observers: " + weatherData.countObservers());
+        System.out.println("WeatherData.changed: " + weatherData.hasChanged());
+        //observers are not notified because weatherData has not changed.
+        weatherData.notifyObservers("It is a sunny day");
         weatherData.setChanged();
+        System.out.println("WeatherData.changed: " + weatherData.hasChanged());
+        //observers are notified because weatherData has changed.
         weatherData.notifyObservers("It is a sunny day");
     }
 }
