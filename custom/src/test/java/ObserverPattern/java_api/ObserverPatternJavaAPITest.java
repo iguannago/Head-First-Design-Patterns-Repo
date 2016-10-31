@@ -9,13 +9,15 @@ import static org.junit.Assert.assertNotNull;
  */
 public class ObserverPatternJavaAPITest {
 
+    private final WeatherData weatherData = new WeatherData();
+
     @Test
     public void subjectTest() {
-        assertNotNull(new WeatherData());
+        assertNotNull(weatherData);
     }
 
     @Test
     public void observerTest() {
-        assertNotNull(new CurrentConditionDisplay());
+        assertNotNull(new CurrentConditionDisplay(weatherData));
     }
 }
