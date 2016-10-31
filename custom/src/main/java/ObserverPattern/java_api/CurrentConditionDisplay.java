@@ -17,6 +17,10 @@ public class CurrentConditionDisplay implements Observer, DisplayElement {
         observable.addObserver(this);
     }
 
+    /*
+    the observer is using the PULL model rather than the PUSH one. Because it is getting new changed values from
+    the observable object.
+     */
     public void update(Observable o, Object arg) {
         if (o instanceof WeatherData) {
             WeatherData weatherData = (WeatherData) o;
