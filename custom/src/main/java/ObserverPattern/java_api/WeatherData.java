@@ -8,7 +8,6 @@ import java.util.Observable;
 public class WeatherData extends Observable {
     private float temp;
     private float humidity;
-    private float pressure;
 
     public void measurementChanged() {
         super.setChanged();
@@ -19,7 +18,6 @@ public class WeatherData extends Observable {
     public void setMeasurements(float temp, float humidity, float pressure) {
         this.temp = temp;
         this.humidity = humidity;
-        this.pressure = pressure;
         measurementChanged();
     }
 
@@ -31,16 +29,12 @@ public class WeatherData extends Observable {
         return humidity;
     }
 
-    public float getPressure() {
-        return pressure;
-    }
 
     @Override
     public String toString() {
         return "WeatherData{" +
                 "temp=" + temp +
                 ", humidity=" + humidity +
-                ", pressure=" + pressure +
                 '}';
     }
 }
