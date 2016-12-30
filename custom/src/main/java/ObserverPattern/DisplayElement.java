@@ -1,4 +1,4 @@
-package ObserverPattern.custom_design;
+package ObserverPattern;
 
 /**
  * Created by davicres on 24/07/2016.

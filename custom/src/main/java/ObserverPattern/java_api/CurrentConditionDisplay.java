@@ -1,6 +1,6 @@
 package ObserverPattern.java_api;
 
-import ObserverPattern.custom_design.DisplayElement;
+import ObserverPattern.DisplayElement;
 
 import java.util.Observable;
 import java.util.Observer;

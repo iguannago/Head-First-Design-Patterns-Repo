@@ -12,7 +12,7 @@ public class WeatherData extends Observable {
     public void measurementChanged() {
         super.setChanged();
         //we are using the PULL model rather than the PUSH one.
-        notifyObservers();
+        super.notifyObservers();
     }
 
     public void setMeasurements(float temp, float humidity, float pressure) {
