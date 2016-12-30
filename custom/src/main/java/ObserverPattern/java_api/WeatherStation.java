@@ -7,10 +7,8 @@ public class WeatherStation {
     public static void main(String[] args) {
         WeatherData weatherData = new WeatherData();
         new CurrentConditionDisplay(weatherData);
-        System.out.println("count observers: " + weatherData.countObservers());
-        //observers are not notified because weatherData has not changed.
-        weatherData.notifyObservers();
-        //observers are notified because weatherData has changed.
-        weatherData.setMeasurements(180, 65, 30.4f);
+        new CustomForecastDisplay(weatherData);
+        weatherData.setMeasurements(80, 65, 30.4f);
+        weatherData.setMeasurements(82, 70, 29.2f);
     }
 }
