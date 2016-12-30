@@ -2,16 +2,15 @@ package ObserverPattern.java_api;
 
 import org.junit.Test;
 
-import java.util.Observable;
-
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by davicres on 30/12/2016.
  */
 public class ForecastDisplayTest {
 
-    private final Observable subject = new Observable();
+    private final WeatherData subject = new WeatherData();
     private final CustomForecastDisplay customForecastDisplay = new CustomForecastDisplay(subject);
 
     @Test
@@ -21,7 +20,8 @@ public class ForecastDisplayTest {
 
     @Test
     public void displayTest() throws Exception {
-
-
+        subject.setMeasurements(15.0f, 0.0f, 0.0f);
+        assertTrue("observer temperature is NOT the same that the subject one",
+                subject.getTemp() == customForecastDisplay.getTemp());
     }
 }
