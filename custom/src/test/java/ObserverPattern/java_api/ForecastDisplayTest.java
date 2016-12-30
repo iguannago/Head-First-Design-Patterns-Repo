@@ -10,10 +10,18 @@ import static org.junit.Assert.assertEquals;
  * Created by davicres on 30/12/2016.
  */
 public class ForecastDisplayTest {
+
+    private final Observable subject = new Observable();
+    private final CustomForecastDisplay customForecastDisplay = new CustomForecastDisplay(subject);
+
     @Test
     public void constructorTest() throws Exception {
-        Observable subject = new Observable();
-        CustomForecastDisplay customForecastDisplay = new CustomForecastDisplay(subject);
         assertEquals(1, subject.countObservers());
+    }
+
+    @Test
+    public void displayTest() throws Exception {
+
+
     }
 }
