@@ -7,7 +7,7 @@ import org.junit.Test;
 /**
  * Created by davicres on 19/09/2016.
  */
-public class ObserverPatternTest {
+public class WeatherDataTest {
 
     private final WeatherData weatherData = new WeatherData();
 
