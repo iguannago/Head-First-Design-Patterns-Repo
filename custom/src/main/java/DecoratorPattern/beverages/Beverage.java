@@ -1,9 +1,9 @@
-package DecoratorPattern;
+package DecoratorPattern.beverages;
 
 public abstract class Beverage {
-    public String description = "";
+    String description;
 
-    public abstract int cost();
+    public abstract double cost();
 
     public String getDescription() {
         return description;
