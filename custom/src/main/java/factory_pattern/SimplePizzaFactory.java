@@ -1,15 +1,13 @@
 package factory_pattern;
 
-import java.util.Optional;
-
 public class SimplePizzaFactory {
-    public Optional<Pizza> createPizza(String type) {
+    public Pizza createPizza(String type) {
         if ("CheesePizza".equals(type)) {
-            return Optional.of(new CheesePizza());
+            return new CheesePizza();
         }
         if ("VeggiePizza".equals(type)) {
-            return Optional.of(new VeggiePizza());
+            return new VeggiePizza();
         }
-        return Optional.empty();
+        throw new RuntimeException("Pizza type not found");
     }
 }

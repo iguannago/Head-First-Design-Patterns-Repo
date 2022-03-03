@@ -1,7 +1,5 @@
 package factory_pattern;
 
-import java.util.Optional;
-
 public class PizzaStore {
     private final SimplePizzaFactory simplePizzaFactory;
 
@@ -10,16 +8,11 @@ public class PizzaStore {
     }
 
     public void orderPizza(String type) {
-        Optional<Pizza> maybePizza = simplePizzaFactory.createPizza(type);
-        if (maybePizza.isPresent()) {
-            Pizza pizza = maybePizza.get();
-            pizza.prepare();
-            pizza.bake();
-            pizza.cut();
-            pizza.box();
-        } else {
-            throw new RuntimeException("Pizza type not found");
-        }
+        Pizza pizza = simplePizzaFactory.createPizza(type);
+        pizza.prepare();
+        pizza.bake();
+        pizza.cut();
+        pizza.box();
     }
 
 }
