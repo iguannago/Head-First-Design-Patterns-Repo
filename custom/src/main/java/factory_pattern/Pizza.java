@@ -1,13 +1,35 @@
 package factory_pattern;
 
+import java.util.List;
+import java.util.Optional;
+
 public abstract class Pizza {
+    String name;
+    String dough;
+    String sauce;
+    List<String> toppings;
 
-    abstract void prepare();
+    void prepare() {
+        System.out.println("Preparing " + name);
+        System.out.println("Tossing dough " + dough);
+        System.out.println("Adding sauce " + sauce);
+        if (Optional.ofNullable(toppings).isPresent()) {
+            toppings.forEach((t) -> System.out.println("toppings " + t));
+        } else {
+            System.out.println("with no toppings");
+        }
+    }
 
-    abstract void bake();
+    void bake() {
+        System.out.println("Bake for 25 mins at 350");
+    }
 
-    abstract void cut();
+    void cut() {
+        System.out.println("Cutting the pizza into diagonal slices");
+    }
 
-    abstract void box();
+    void box() {
+        System.out.println("Place pizza in official PizzaStore box");
+    }
 
 }

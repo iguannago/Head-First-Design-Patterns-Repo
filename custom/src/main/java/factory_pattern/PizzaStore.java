@@ -1,14 +1,14 @@
 package factory_pattern;
 
 public class PizzaStore {
-    private final SimplePizzaFactory simplePizzaFactory;
+    private final PizzaFactory pizzaFactory;
 
-    public PizzaStore(SimplePizzaFactory simplePizzaFactory) {
-        this.simplePizzaFactory = simplePizzaFactory;
+    public PizzaStore(PizzaFactory pizzaStore) {
+        this.pizzaFactory = pizzaStore;
     }
 
     public void orderPizza(String type) {
-        Pizza pizza = simplePizzaFactory.createPizza(type);
+        Pizza pizza = pizzaFactory.createPizza(type);
         pizza.prepare();
         pizza.bake();
         pizza.cut();

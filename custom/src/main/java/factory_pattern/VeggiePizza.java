@@ -1,28 +1,13 @@
 package factory_pattern;
 
-import java.util.logging.Logger;
+import java.util.List;
 
 public class VeggiePizza extends Pizza {
-    Logger logger = Logger.getLogger(this.getClass().getName());
-
-    @Override
-    void prepare() {
-        logger.info("preparing VeggiePizza");
-    }
-
-    @Override
-    void bake() {
-        logger.info("baking VeggiePizza");
-    }
-
-    @Override
-    void cut() {
-        logger.info("cutting VeggiePizza");
-    }
-
-    @Override
-    void box() {
-        logger.info("boxing VeggiePizza");
+    public VeggiePizza() {
+        super.name = "Veggie pizza";
+        super.dough = "veggie";
+        super.sauce = " veggie";
+        super.toppings = List.of("Veggie toppings");
     }
 
 }
