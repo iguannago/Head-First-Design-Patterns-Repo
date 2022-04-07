@@ -1,7 +1,5 @@
 package strategy_pattern.duck.ducks;
 
-import strategy_pattern.duck.fly.FlyRocketPowered;
-
 /**
  * Created by davicres on 05/04/2016.
  */
@@ -15,7 +13,7 @@ public class MiniDuckSimulator {
         Duck modelDuck = new ModelDuck();
         System.out.println("modelDuck:");
         modelDuck.fly();
-        modelDuck.setFlyBehaviour(new FlyRocketPowered());
+        modelDuck.setFlyBehaviour(() -> System.out.println("I'm flying with a Rocket."));
         modelDuck.fly();
     }
 }
